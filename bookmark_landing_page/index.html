@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Frontend Mentor | Bookmark landing page</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="header container">
+			<nav class="header__nav">
+				<div class="header__nav--right-side">
+					<img src="./images/logo-bookmark.svg" alt="" height="30" />
+				</div>
+				<ul class="header__nav--left-side">
+					<li class="nav__item"><a>Features</a></li>
+					<li class="nav__item"><a>Pricing</a></li>
+					<li class="nav__item"><a>Contact</a></li>
+					<li class="nav__item">
+						<a class="btn btn-login">Login</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="hero container">
+			<div class="hero__text">
+				<h1>A Simple Bookmark Manager</h1>
+				<h3>
+					A clean and simple interface to organize your favourite
+					websites. Open a new browser tab and see your sites load
+					instantly. Try it for free.
+				</h3>
+				<a class="btn primary">Get it on Chrome</a>
+				<a class="btn secondary">Get it on Firefox</a>
+			</div>
+			<div class="hero__image">
+				<img id="image" src="./images/illustration-hero.svg" alt "" />
+				<div class="small-round-bg left"></div>
+			</div>
+		</section>
+
+		<section class="sections feature-section">
+			<div class="feature-section__container">
+				<div class="feature-section__content">
+					<div class="sections__header container">
+						<h2>Features</h2>
+						<h3>
+							Our aim is to make it quick and easy for you to
+							access your favourite websites. Your bookmarks sync
+							between your devices so you can access them on the
+							go.
+						</h3>
+					</div>
+
+					<div class="feature-section__tabs--content">
+						<ul class="sections__nav">
+							<li class="nav__item active">Simple Bookmarking</li>
+							<li class="nav__item">Speedy Searching</li>
+							<li class="nav__item">Easy Sharing</li>
+						</ul>
+						<div class="sections__tab--content active">
+							<div
+								class="sections__tab--content-details container"
+							>
+								<div class="sections__nav--details-graphic">
+									<img
+										src="./images/illustration-features-tab-1.svg"
+										alt=""
+										srcset=""
+									/>
+								</div>
+								<div class="sections__nav--details-text">
+									<h2>Bookmark in one click</h2>
+									<h3>
+										Organize your bookmarks however you
+										like. Our simple drag-and-drop interface
+										gives you complete control over how you
+										manage your favourite sites.
+									</h3>
+									<button class="btn primary">
+										More Info
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="sections__tab--content hidden">
+							<div
+								class="sections__tab--content-details container"
+							>
+								<div class="sections__nav--details-graphic">
+									<img
+										src="./images/illustration-features-tab-2.svg"
+										alt=""
+										srcset=""
+									/>
+								</div>
+								<div class="sections__nav--details-text">
+									<h2>Intelligent search</h2>
+									<h3>
+										Our powerful search feature will help
+										you find saved sites in no time at all.
+										No need to trawl through all of your
+										bookmarks.
+									</h3>
+									<button class="btn primary">
+										More Info
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="sections__tab--content hidden">
+							<div
+								class="sections__tab--content-details container"
+							>
+								<div class="sections__nav--details-graphic">
+									<img
+										src="./images/illustration-features-tab-3.svg"
+										alt=""
+										srcset=""
+									/>
+								</div>
+								<div class="sections__nav--details-text">
+									<h2>Share your bookmarks</h2>
+									<h3>
+										Easily share your bookmarks and
+										collections with others. Create a
+										shareable link that you can send at the
+										click of a button.
+									</h3>
+									<button class="btn btn-primary">
+										More Info
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="small-round-bg right"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sections download-section">
+			<div class="sections__header">
+				<div class="container">
+					<h2>Download the extension</h2>
+					<h3>
+						We’ve got more browsers in the pipeline. Please do let
+						us know if you’ve got a favourite you’d like us to
+						prioritize.
+					</h3>
+				</div>
+			</div>
+
+			<div class="cards__container container">
+				<div class="card top">
+					<div class="card--img">
+						<img src="./images/logo-chrome.svg" alt="" srcset="" />
+					</div>
+
+					<div class="card--text">
+						<h4>Add to Chrome</h4>
+						<h5>Minimum version 62</h5>
+					</div>
+					<div class="dotted--line">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="280"
+							height="4"
+						>
+							<path
+								fill="#495DCF"
+								fill-opacity=".2"
+								fill-rule="evenodd"
+								d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+							/>
+						</svg>
+						<!-- <svg width="100%" height="30px">
+							<line
+								x1="0"
+								x2="300"
+								y1="5"
+								y2="5"
+								stroke="#5184AF"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-dasharray="1, 12"
+							/>
+						</svg> -->
+					</div>
+
+					<button class="btn primary">Add & Install Extension</button>
+				</div>
+				<div class="card middle">
+					<div class="card--img">
+						<img src="./images/logo-firefox.svg" alt="" srcset="" />
+					</div>
+					<div class="card--text">
+						<h4>Add to Firefox</h4>
+						<h5>Minimum version 55</h5>
+					</div>
+					<div class="dotted--line">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="280"
+							height="4"
+						>
+							<path
+								fill="#495DCF"
+								fill-opacity=".2"
+								fill-rule="evenodd"
+								d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+							/>
+						</svg>
+					</div>
+
+					<button class="btn primary">Add & Install Extension</button>
+				</div>
+				<div class="card bottom">
+					<div class="card--img">
+						<img src="./images/logo-opera.svg" alt="" srcset="" />
+					</div>
+
+					<div class="card--text">
+						<h4>Add to Opera</h4>
+						<h5>Minimum version 46</h5>
+					</div>
+					<div class="dotted--line">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="280"
+							height="4"
+						>
+							<path
+								fill="#495DCF"
+								fill-opacity=".2"
+								fill-rule="evenodd"
+								d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+							/>
+						</svg>
+					</div>
+					<button class="btn primary">Add & Install Extension</button>
+				</div>
+			</div>
+		</section>
+		<section class="sections faq-section">
+			<div class="container">
+				<div class="sections__header">
+					<h2>Frequently Asked Questions</h2>
+					<h3>
+						Here are some of our FAQs. If you have any other
+						questions you’d like answered please feel free to email
+						us.
+					</h3>
+				</div>
+				<div class="sections__content faq">
+					<div class="details-item">
+						<details>
+							<summary>What is Bookmark?</summary>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Fusce tincidunt justo eget
+								ultricies fringilla. Phasellus blandit ipsum
+								quis quam ornare mattis.
+							</p>
+						</details>
+						<div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="18"
+								height="12"
+							>
+								<path
+									fill="none"
+									stroke="#5267DF"
+									stroke-width="3"
+									d="M1 1l8 8 8-8"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="details-item">
+						<details>
+							<summary>How can I request a new browser?</summary>
+							<p>
+								Vivamus luctus eros aliquet convallis ultricies.
+								Mauris augue massa, ultricies non ligula.
+								Suspendisse imperdiet. Vivamus luctus eros
+								aliquet convallis ultricies. Mauris augue massa,
+								ultricies non ligula. Suspendisse imperdie
+								tVivamus luctus eros aliquet convallis
+								ultricies. Mauris augue massa, ultricies non
+								ligula. Suspendisse imperdiet.
+							</p>
+						</details>
+						<div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="18"
+								height="12"
+							>
+								<path
+									fill="none"
+									stroke="#5267DF"
+									stroke-width="3"
+									d="M1 1l8 8 8-8"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="details-item">
+						<details>
+							<summary>Is there a mobile app?</summary>
+							<p>
+								Sed consectetur quam id neque fermentum
+								accumsan. Praesent luctus vestibulum dolor, ut
+								condimentum urna vulputate eget. Cras in ligula
+								quis est pharetra mattis sit amet pharetra
+								purus. Sed sollicitudin ex et ultricies
+								bibendum.
+							</p>
+						</details>
+						<div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="18"
+								height="12"
+							>
+								<path
+									fill="none"
+									stroke="#5267DF"
+									stroke-width="3"
+									d="M1 1l8 8 8-8"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="details-item">
+						<details>
+							<summary>
+								What about other Chromium browsers?
+							</summary>
+							<p>
+								Integer condimentum ipsum id imperdiet
+								finibus.Vivamus in placerat mi, at euismod
+								dui.Aliquam vitae neque eget nisl gravida
+								pellentesque non ut velit.
+							</p>
+						</details>
+						<div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="18"
+								height="12"
+							>
+								<path
+									fill="none"
+									stroke="#5267DF"
+									stroke-width="3"
+									d="M1 1l8 8 8-8"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn primary">More Info</button>
+		</section>
+
+		<section>
+			<h5>35, 000 + already joined</h5>
+			<h2>Stay up - to - date with what we’ re doing</h2>
+			<form>
+				<input type="text" placeholder="Enter your email address" />
+				<button>Contact Us</button>
+			</form>
+		</section>
+		<footer>
+			<nav>
+				<div>
+					<img src="./images/logo-bookmark.svg" alt="" />
+				</div>
+				<ul class="left-nav">
+					<li>Features</li>
+					<li>Pricing</li>
+					<li>Contact</li>
+					<li>
+						<button>Login</button>
+					</li>
+				</ul>
+			</nav>
+
+			<p class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge "
+					target="_blank "
+					>Frontend Mentor</a
+				>. Coded by <a href="# ">Your Name Here</a>.
+			</p>
+		</footer>
+	</body>
+</html>
