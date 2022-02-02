@@ -394,6 +394,8 @@ h3 {
 	align-items: center;
 	/* width: 600px; */
 	margin: 0 auto;
+	margin-bottom: 10rem;
+
 }
 
 .faq-section .sections__header {
@@ -480,4 +482,45 @@ width: 500px;
 	padding: 15px 20px;
 }
 
+.contactus-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	padding: 5rem 10rem;
+	background-color: #5669DE;
+	text-align: center;
+}
 
+
+.contactus-section h5 {
+font-size: .9rem;
+letter-spacing: 8px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.contactus-section h2 {
+	width: 33rem;
+	font-size: 2.5rem;
+}
+
+.contactus-section form input {
+	padding: 1rem;
+	border-radius: 5px;
+	width: 22rem;
+	font-size: 1rem;
+	margin-right: 15px;
+	/* color:#525252; */
+}
+.contactus-section form input::placeholder {
+	color:#cacaca; 
+}
+
+.contactus-section .contactus-btn {
+	/* padding: 5px; */
+	color: #fff;
+	background-color: var(--primarySoftRed);
+	/* var(--primarySoftRed) */
+}
