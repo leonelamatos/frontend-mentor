@@ -22,7 +22,9 @@
 			}
 		</style>
 	</head>
-	<script src="index.js" async></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@hapi/joi@17.1.1/dist/joi-browser.min.js" defer></script>
+	<script src="index.js" defer></script>
 
 	<body>
 		<header class="header container">
@@ -71,13 +73,15 @@
 					<div class="feature-section__tabs--content">
 						<div class="feature-section__tabs--header">
 							<ul class="sections__nav">
-								<li id="iBookmark" data-tab="tab1" class="nav__item feat tab1 active">Simple Bookmarking</li>
-								<li id="iSearching" data-tab="tab2"class="nav__item feat tab2 ">Speedy Searching</li>
+								<li id="iBookmark" data-tab="tab1" class="nav__item feat tab1 active">
+									Simple Bookmarking
+								</li>
+								<li id="iSearching" data-tab="tab2" class="nav__item feat tab2">Speedy Searching</li>
 								<li id="iSharing" data-tab="tab3" class="nav__item feat tab3">Easy Sharing</li>
 							</ul>
 							<span id="indicator" class="active-slide"></span>
 						</div>
-						<div id="content-tab1" class="sections__tab--content  active">
+						<div id="content-tab1" class="sections__tab--content active">
 							<div class="sections__tab--content-details tab1 container">
 								<div class="sections__nav--details-graphic">
 									<img src="./images/illustration-features-tab-1.svg" alt="" />
@@ -94,7 +98,7 @@
 							</div>
 						</div>
 
-						<div id="content-tab2" class="sections__tab--content  hidden">
+						<div id="content-tab2" class="sections__tab--content hidden">
 							<div class="sections__tab--content-details container tab2">
 								<div class="sections__nav--details-graphic">
 									<img class="tab-2-image" src="./images/illustration-features-tab-2.svg" alt="" />
@@ -247,7 +251,13 @@
 						</details>
 						<div class="arrow">
 							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-								<path class='arrow-path' fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+								<path
+									class="arrow-path"
+									fill="none"
+									stroke="#5267DF"
+									stroke-width="3"
+									d="M1 1l8 8 8-8"
+								/>
 							</svg>
 						</div>
 					</div>
@@ -263,7 +273,13 @@
 						</details>
 						<div class="arrow">
 							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-								<path class='arrow-path' fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+								<path
+									class="arrow-path"
+									fill="none"
+									stroke="#5267DF"
+									stroke-width="3"
+									d="M1 1l8 8 8-8"
+								/>
 							</svg>
 						</div>
 					</div>
@@ -278,7 +294,13 @@
 						</details>
 						<div class="arrow">
 							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-								<path class='arrow-path' fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+								<path
+									class="arrow-path"
+									fill="none"
+									stroke="#5267DF"
+									stroke-width="3"
+									d="M1 1l8 8 8-8"
+								/>
 							</svg>
 						</div>
 					</div>
@@ -292,7 +314,13 @@
 						</details>
 						<div class="arrow">
 							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-								<path class='arrow-path' fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+								<path
+									class="arrow-path"
+									fill="none"
+									stroke="#5267DF"
+									stroke-width="3"
+									d="M1 1l8 8 8-8"
+								/>
 							</svg>
 						</div>
 					</div>
@@ -304,10 +332,14 @@
 		<section class="sections contactus-section">
 			<h5>35,000+ already joined</h5>
 			<h2>Stay up-to-date with what we’ re doing</h2>
-			<form>
-				<input type="text" placeholder="Enter your email address" />
-				<button class="contactus-btn btn">Contact Us</button>
-			</form>
+			<form id="form">
+				<div class="form__input--error">
+					<input id="email-input" type="text" placeholder="Enter your email address"/>
+					<span id="email-error-message" class=""></span>
+
+				</div>
+					<button type="submit" class="contactus-btn btn">Contact Us </button>
+				</form>
 		</section>
 		<footer class="sections footer-section">
 			<nav>

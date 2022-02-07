@@ -264,11 +264,11 @@ h3 {
 .active-slide {
 	display: block;
 	position: relative;
-  top: -5px;
+	top: -5px;
 	width: calc(100% / 3);
 	height: 5px;
 	background-color: var(--primarySoftRed);
-  transition: transform .3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
 }
 
 .feature-section__tabs--content {
@@ -321,9 +321,8 @@ h3 {
 	height: 28rem;
 }
 
-.sections__tab--content-details.tab1 .small-round-bg{
-
-  bottom: -127px
+.sections__tab--content-details.tab1 .small-round-bg {
+	bottom: -127px;
 }
 
 /* .feature-section .small-round-bg {
@@ -533,9 +532,8 @@ h3 {
 	color: rgb(148, 148, 148);
 }
 
-
 .faq .detail-items.active svg path {
-	fill: var(--primarySoftRed)
+	fill: var(--primarySoftRed);
 }
 
 .faq-section .btn {
@@ -566,6 +564,15 @@ h3 {
 	margin-bottom: 50px;
 }
 
+.contactus-section .form__input--error {
+	display: flex;
+	flex-direction: column;
+}
+
+.contactus-section form {
+	display: flex;
+}
+
 .contactus-section form input {
 	padding: 1rem;
 	border-radius: 5px;
@@ -578,8 +585,30 @@ h3 {
 	color: #cacaca;
 }
 
+/* .contactus-section form span{
+	/* display: flex; *
+	padding: 0 20px;
+} */
+
+.contactus-section form input.error {
+	border: 3px solid var(--primarySoftRed);
+}
+
+.contactus-section #email-error-message.error-message {
+	display: block;
+	width: 95.7%;
+	padding: 5px 10px;
+	font-size: 0.9rem;
+	text-align: left;
+	background-color: var(--primarySoftRed);
+	margin-top: -3px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
 .contactus-section .contactus-btn {
 	/* padding: 5px; */
+	align-self: flex-start;
 	color: #fff;
 	background-color: var(--primarySoftRed);
 	/* var(--primarySoftRed) */
