@@ -1,0 +1,232 @@
+:root {
+	--clr-white: 255 100% 100%;
+	--softBlue: 231 69% 60%;
+	--softRed: 0 94% 66%;
+	--grayishBlue: 229 8% 60%;
+	--veryDarkBlue: 229 31% 21%;
+	--lightGray: 0 0% 97%
+}
+
+/* ----------------- */
+/* Reset             */
+/* ----------------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+	list-style: none;
+	padding-inline: 0;
+	margin-inline: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-family: 'Rubik', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* -------------------- */
+/* Utility classes      */
+/* -------------------- */
+
+.grid,
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+
+.no-gap {
+	gap: unset;
+}
+
+.justify-between {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__nav--left-side.justify-between {
+	background-color: rgb(162, 162, 255);
+}
+
+.outter-container {
+	max-width: 1440px;
+	margin-inline: auto;
+	/* background-color: pink; */
+	font-size: 1.8em;
+}
+
+.inner-container {
+	max-width: 75rem;
+	margin-inline: auto;
+}
+
+.text-medium {
+	font-weight: 500;
+}
+.text-bold {
+	font-weight: 700;
+}
+
+.text-dark {
+	color: hsl(var(--veryDarkBlue));
+}
+
+.center {
+	margin-inline: auto
+}
+.align-vertical {
+	margin: auto 0;
+}
+
+.margin-2 {
+	margin: 2rem 0;
+}
+
+.margin-right-1 {
+	margin-right: 1rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.btn {
+	color: hsl(var(--clr-white));
+	padding: 0.6rem 2rem;
+	border-radius: 5px;
+	border: none;
+	box-shadow: -2px 2px 7px rgba(147, 147, 170, 0.3);
+}
+
+.primary {
+	font-size: 0.8rem;
+	background-color: hsl(var(--softBlue));
+	padding-inline: 1.3rem;
+}
+
+.secondary {
+	font-size: 0.8rem;
+	/* background-color: rgb(247, 247, 247); */
+	background-color: hsl(var(--lightGray));
+	padding-inline: 1.3rem;
+	color: hsl(var(--veryDarkBlue))
+}
+
+
+/* -------------------- */
+/* general classes      */
+/* -------------------- */
+
+.nav_list {
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+}
+
+.btn-login {
+	background-color: hsl(var(--softRed));
+}
+
+.header {
+	padding: 1rem;
+}
+
+.hero {
+	margin: 3rem 0;
+	padding-inline: 1rem
+}
+
+.hero__text h1{
+font-size: 3rem;
+line-height: 1;
+}
+
+
+
+
+
+.hero__image {
+	width: 82rem;
+
+}
+
+
+
+
+
+.small-round-bg {
+	display: block;
+    background-color: hsl(var(--softBlue));
+    height: 26rem;
+    width: 30rem;
+    position: absolute;
+    transform: translate(116px, -330px);
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+
+}

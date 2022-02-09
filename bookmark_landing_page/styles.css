@@ -18,17 +18,16 @@
 }
 
 * {
-	margin: 0;
+	margin-inline: auto;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/* font-size: 100%; */
 	font: inherit;
-	vertical-align: baseline;
 	box-sizing: border-box;
 }
 
 body {
-	font-size: 10px;
+	font-size: 16px;
 	font-family: 'Rubik', sans-serif;
 	/* max-width: 1440px; */
 }
@@ -38,31 +37,40 @@ h2 {
 h3 {
 	font-size: 1.125rem;
 }
+img {
+	max-width: 100%;
+}
 
 /* section {
 	/* padding: 75px 0; *
 } */
 
+.outer-container {
+	max-width: 1440px;
+	height: 100%;
+	background-color: rgb(225, 253, 253)
+}
+
 .container {
 	/* display: flex;
     flex-direction: column;
     justify-content: center; */
-	width: 1440px;
-	margin: 0 auto;
+	width: 1200px;
+	margin-inline: auto;
 }
 
-.small-round-bg {
-	/* position: absolute; */
+/* .small-round-bg {
 	width: 750px;
 	height: 460px;
 	background-color: var(--primarySoftBlue);
 	z-index: -1;
-}
+} */
 
-.left {
+/* .left {
 	border-top-left-radius: 250px;
 	border-bottom-left-radius: 250px;
-}
+} */
+
 .right {
 	border-top-right-radius: 250px;
 	border-bottom-right-radius: 250px;
@@ -97,7 +105,7 @@ h3 {
 
 .nav__item {
 	list-style: none;
-	width: 125px;
+	/* width: 125px; */
 	text-align: center;
 	letter-spacing: 1px;
 	transition: all 0.3s ease;
@@ -131,24 +139,36 @@ h3 {
 
 .hero__image {
 	flex: 1;
-	/*width: 750px;*/
 	position: relative;
 	top: 15px;
 }
 
+/* .hero__image.left::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 750px;
+	height: 460px;
+	background-color: var(--primarySoftBlue);
+	z-index: -1;
+	border-top-left-radius: 250px;
+	border-bottom-left-radius: 250px;
+	transform: translate(200px, -300px);
+} */
+
 .hero__image #image {
-	height: 38rem;
+	/* height: 38rem; */
 }
 
-.hero__image .small-round-bg {
+/* .hero__image .small-round-bg {
 	position: absolute;
 	top: 164px;
 	left: 266px;
-}
+} */
 
 .hero__text {
-	min-width: 665px;
-	padding-right: 80px;
+	/* min-width: 665px;
+	padding-right: 80px; */
 	/*letter-spacing: 1px;*/
 }
 
@@ -220,7 +240,7 @@ h3 {
 }
 
 .sections h3 {
-	padding: 0 27rem;
+	/* padding: 0 27rem; */
 	text-align: center;
 	margin: 0 auto;
 	color: var(--lightGray);
@@ -229,7 +249,7 @@ h3 {
 
 .feature-section__tabs--header {
 	position: relative;
-	width: 800px;
+	/* width: 800px; */
 	margin: 0 auto;
 	margin-bottom: 6rem;
 }
@@ -239,7 +259,7 @@ h3 {
 	justify-content: space-between;
 	border-bottom: 1px solid rgb(209, 208, 208);
 	margin: 0 auto;
-	width: 800px;
+	/* width: 800px; */
 }
 
 .sections .sections__nav .nav__item {
@@ -279,7 +299,7 @@ h3 {
 .sections__tab--content-details {
 	display: flex;
 	justify-content: space-between;
-	width: 70rem;
+	/* width: 70rem; */
 	margin-bottom: 5rem;
 }
 
@@ -288,7 +308,7 @@ h3 {
 .sections__tab--content-details.tab3 .small-round-bg {
 	bottom: -25px;
 	position: absolute;
-	width: 700px;
+	/* width: 700px; */
 	height: 390px;
 	left: calc(55% - 950px);
 }
@@ -313,12 +333,12 @@ h3 {
 }
 
 .sections__nav--details-graphic img.tab-1-image {
-	height: 22rem;
+	/* height: 22rem; */
 	/* width: 650px; */
 }
 .sections__nav--details-graphic img.tab-2-image,
 .sections__nav--details-graphic img.tab-3-image {
-	height: 28rem;
+	/* height: 28rem; */
 }
 
 .sections__tab--content-details.tab1 .small-round-bg {
@@ -335,7 +355,7 @@ h3 {
 .sections__nav--details-text {
 	padding-top: 4rem;
 	text-align: left;
-	width: 460px;
+	/* width: 460px; */
 }
 .sections__nav--details-text h2 {
 	font-size: 2.2rem;
@@ -358,10 +378,11 @@ h3 {
 
 .cards__container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 800px;
+	/* width: 800px; */
 	margin-bottom: 60px;
-	height: 400px;
+	/* height: 400px; */
 
 	/* flex-basis: 300px; */
 }
@@ -383,7 +404,7 @@ h3 {
 	justify-content: space-between;
 	align-items: center;
 	padding: 25px 0 20px;
-	width: 250px;
+	/* width: 250px; */
 	height: 300px;
 	border-radius: 10px;
 	/* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -402,7 +423,7 @@ h3 {
 }
 
 .card .card--img img {
-	width: 75px;
+	/* width: 75px; */
 }
 
 .card .card--text {
@@ -547,7 +568,7 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	color: #fff;
-	padding: 5rem 10rem;
+	/* padding: 5rem 10rem; */
 	background-color: #5669de;
 	text-align: center;
 }
@@ -559,7 +580,7 @@ h3 {
 }
 
 .contactus-section h2 {
-	width: 33rem;
+	/* width: 33rem; */
 	font-size: 2.5rem;
 	margin-bottom: 50px;
 }
@@ -576,7 +597,7 @@ h3 {
 .contactus-section form input {
 	padding: 1rem;
 	border-radius: 5px;
-	width: 22rem;
+	/* width: 22rem; */
 	font-size: 1rem;
 	margin-right: 15px;
 	/* color:#525252; */
