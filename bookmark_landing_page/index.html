@@ -30,7 +30,7 @@
 	</head>
 
 	<script src="https://cdn.jsdelivr.net/npm/@hapi/joi@17.1.1/dist/joi-browser.min.js" defer></script>
-	<!-- <script src="index.js" defer></script> -->
+	<script src="index.js" defer></script>
 
 	<body>
 		<main class="outter-container">
@@ -101,80 +101,85 @@
 									</div>
 									<!-- <span id="indicator" class="border-line center"></span> -->
 								</div>
-								<div id="content-tab1" class="sections__tab--content active">
-									<div class="sections__tab--content-details tab1">
-										<div class="sections__nav--details-graphic">
-											<!-- <img src="./images/illustration-features-tab-1.svg" alt="" /> -->
-										</div>
-										<div class="sections__nav--details-text">
-											<h2>Bookmark in one click</h2>
-											<p>
-												Organize your bookmarks however you like. Our simple drag-and-drop
-												interface gives you complete control over how you manage your favourite
-												sites.
-											</p>
-											<button class="btn primary">More Info</button>
-										</div>
-										<!-- <div class="small-round-bg right"></div> -->
-									</div>
-								</div>
 
-								<div id="content-tab2" class="sections__tab--content hidden">
-									<div class="sections__tab--content-details tab2">
-										<div class="sections__nav--details-graphic">
-											<!-- <img class="tab-2-image" src="./images/illustration-features-tab-2.svg" alt="" /> -->
-										</div>
-										<div class="sections__nav--details-text">
-											<h2>Intelligent search</h2>
-											<p>
-												Our powerful search feature will help you find saved sites in no time at
-												all. No need to trawl through all of your bookmarks.
-											</p>
-											<button class="btn primary">More Info</button>
-										</div>
-										<!-- <div class="small-round-bg right"></div> -->
-									</div>
-								</div>
+								<div class="tab-content">
 
-								<div id="content-tab3" class="sections__tab--content hidden">
-									<div class="sections__tab--content-details tab3">
-										<div class="sections__nav--details-graphic">
-											<!-- <img
-										class="tab-3-image"
-										src="./images/illustration-features-tab-3.svg"
-										alt=""
-										srcset=""
-									/> -->
+
+
+									<div id="content-tab1" class="sections__tab--content hidden">
+										<div class="sections__tab--content-details tab1 flex" style="--gap: 8rem">
+											<div class="sections__nav--details-graphic">
+												<img src="./images/illustration-features-tab-1.svg" alt="" />
+											</div>
+											<div class="sections__nav--details-text align-vertical">
+												<h2 >Bookmark in one click</h2>
+												<p class="margin-2">
+													Organize your bookmarks however you like. Our simple drag-and-drop
+													interface gives you complete control over how you manage your favourite
+													sites.
+												</p>
+												<button class="btn primary">More Info</button>
+											</div>
+											<!-- <div class="small-round-bg right"></div> -->
 										</div>
-										<div class="sections__nav--details-text">
-											<h2>Share your bookmarks</h2>
-											<p>
-												Easily share your bookmarks and collections with others. Create a
-												shareable link that you can send at the click of a button.
-											</p>
-											<button class="btn primary">More Info</button>
+									</div>
+	
+									<div id="content-tab2" class="sections__tab--content active">
+										<div class="sections__tab--content-details tab2 flex" style="--gap: 6.8rem">
+											<div class="sections__nav--details-graphic">
+												<img class="tab-2-image" src="./images/illustration-features-tab-2.svg" alt="" />
+											</div>
+											<div class="sections__nav--details-text align-vertical">
+												<h2>Intelligent search</h2>
+												<p class="margin-2">
+													Our powerful search feature will help you find saved sites in no time at
+													all. No need to trawl through all of your bookmarks.
+												</p>
+												<button class="btn primary">More Info</button>
+											</div>
+											<!-- <div class="small-round-bg right"></div> -->
 										</div>
-										<!-- <div class="small-round-bg right"></div> -->
+									</div>
+	
+									<div id="content-tab3" class="sections__tab--content hidden">
+										<div class="sections__tab--content-details tab3 flex" style="--gap: 12rem">
+											<div class="sections__nav--details-graphic">
+												<img
+											class="tab-3-image"
+											src="./images/illustration-features-tab-3.svg"
+											alt=""
+										/>
+											</div>
+											<div class="sections__nav--details-text align-vertical">
+												<h2>Share your bookmarks</h2>
+												<p class="margin-2">
+													Easily share your bookmarks and collections with others. Create a
+													shareable link that you can send at the click of a button.
+												</p>
+												<button class="btn primary">More Info</button>
+											</div>
+											<!-- <div class="small-round-bg right"></div> -->
+										</div>
 									</div>
 								</div>
-							</div>
+								</div>
 						</div>
 					</div>
 				</section>
 
 				<section class="sections download-section">
-					<div class="sections__header">
-						<h2>Download the extension</h2>
-						<p>
+					<div class="sections__header center-text center">
+						<h2 class="text-medium margin-2">Download the extension</h2>
+						<p class="text-dark-gray">
 							We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite
 							you’d like us to prioritize.
 						</p>
 					</div>
 
-					<!-- <div class="cards__container">
+					<div class="cards__container">
 				<div class="card top">
 					<div class="card--img">
-						<!-- <img src="./images/logo-chrome.svg" alt="" srcset="" /> --
+						<img src="./images/logo-chrome.svg" alt="" srcset="" />
 					</div>
 
 					<div class="card--text">
@@ -237,7 +242,7 @@
 					</div>
 					<button class="btn primary">Add & Install Extension</button>
 				</div>
-			</div> -->
+			</div>
 				</section>
 				<section class="sections faq-section">
 					<div class="">

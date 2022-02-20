@@ -4,11 +4,11 @@ const navItems = document.querySelectorAll('.nav__item.feat');
 const tabContent = document.querySelectorAll('.sections__tab--content');
 const activeIndicator = document.getElementById('indicator');
 const summaryArray = document.querySelectorAll('.detail-items details');
-const form = document.getElementById('form');
+// const form = document.getElementById('form');
 const emailInput = document.getElementById('email-input');
 const emailInputError = document.getElementById('email-error-message');
 
-form.onsubmit = handleOnSubmit;
+// form.onsubmit = handleOnSubmit;
 
 const schema = joi.object().keys({
 	email: joi
@@ -21,9 +21,10 @@ const schema = joi.object().keys({
 
 navItems.forEach((item, indx) => {
 	item.addEventListener('click', function () {
+		console.log(item);
 		removeClass();
 		this.classList.add('active');
-		activeIndicator.style.transform = `translateX(calc(100% * ${indx}))`;
+		// activeIndicator.style.transform = `translateX(calc(100% * ${indx}))`;
 		showTabContent(this.dataset.tab);
 	});
 });
@@ -54,23 +55,23 @@ summaryArray.forEach((title) => {
 	});
 });
 
-function handleOnSubmit(event) {
-	event.preventDefault();
-	const errorMessage = schema.validate({
-		email: emailInput.value,
-	});
+// function handleOnSubmit(event) {
+// 	event.preventDefault();
+// 	const errorMessage = schema.validate({
+// 		email: emailInput.value,
+// 	});
 
-	const isInvalid = errorMessage.hasOwnProperty('error');
+// 	const isInvalid = errorMessage.hasOwnProperty('error');
 
-	if (isInvalid) {
-		emailInputError.innerText = errorMessage.error.message;
+// 	if (isInvalid) {
+// 		emailInputError.innerText = errorMessage.error.message;
 
-		emailInput.classList.add('error');
-		emailInputError.classList.add('error-message');
-	} else {
-		emailInputError.innerText = '';
+// 		emailInput.classList.add('error');
+// 		emailInputError.classList.add('error-message');
+// 	} else {
+// 		emailInputError.innerText = '';
 
-		emailInput.classList.remove('error');
-		emailInputError.classList.remove('error-message');
-	}
-}
+// 		emailInput.classList.remove('error');
+// 		emailInputError.classList.remove('error-message');
+// 	}
+// }
