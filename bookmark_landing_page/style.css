@@ -356,7 +356,7 @@ select {
 	/* background-color: lightblue; */
 }
 
-.sections__content .detail-items {
+.sections__content .detail-items{
 	display: flex;
 	justify-content: space-between;
 	padding: 1.5rem 0;
@@ -373,8 +373,9 @@ select {
 .sections__content .detail-items summary {
 	list-style: none;
 	font-weight: 500;
+	transition: color .2s ease;
 }
-.sections__content .detail-items summary:hover {
+.sections__content .detail-items:hover summary {
 	color: hsl(var(--softRed))
 }
 
