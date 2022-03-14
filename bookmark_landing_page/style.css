@@ -265,7 +265,7 @@ select {
 }
 
 .hero {
-	margin: 3rem 0;
+	margin: 3rem 0 5rem;
 	padding-inline: 1rem;
 }
 
@@ -276,6 +276,7 @@ select {
 
 .hero__image {
 	width: 82rem;
+	position: relative;
 }
 
 .sections__header {
@@ -640,4 +641,16 @@ span.error {
 .right {
 	border-bottom-right-radius: 15rem;
 	border-top-right-radius: 15rem;
+}
+
+.left {
+	border-bottom-left-radius: 15rem;
+	border-top-left-radius: 15rem;
+}
+
+.hero-bg {
+	top: 0;
+	position: absolute;
+	height: 20rem;
+	transform: translate(174px, 133px);
 }
