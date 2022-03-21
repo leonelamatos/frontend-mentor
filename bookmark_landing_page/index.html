@@ -35,9 +35,9 @@
 
 <body>
 	<main>
-		<div class="outer-container">
-			<div class="inner-container">
-
+		<div class="outter-container">
+			<!-- <div class="inner-container"> -->
+			<div>
 				<header class="header justify-between tomato">
 					<nav class="flex no-gap justify-between">
 						<div class="header__nav--right-side">
@@ -59,23 +59,25 @@
 				</header>
 
 				<section class="hero flex">
-					<div class="hero__text text-normal center align-vertical">
-						<h1>A Simple Bookmark Manager</h1>
-						<p class="margin-2 text-dark-gray">
-							A clean and simple interface to organize your favourite websites. Open a new browser tab and
-							see your sites load instantly. Try it for free.
-						</p>
-						<div class="hero__buttons--container">
-							<a class="btn primary text-medium margin-right-1">Get it on Chrome</a>
-							<a class="btn secondary text-medium ">Get it on Firefox</a>
-
-
+					<div class="hero__content">
+						<div class="hero__text text-normal center align-vertical">
+							<h1>A Simple Bookmark Manager</h1>
+							<p class="margin-2 text-dark-gray">
+								A clean and simple interface to organize your favourite websites. Open a new browser tab and
+								see your sites load instantly. Try it for free.
+							</p>
+							<div class="hero__buttons--container">
+								<a class="btn primary text-medium margin-right-1">Get it on Chrome</a>
+								<a class="btn secondary text-medium ">Get it on Firefox</a>
+	
+	
+							</div>
 						</div>
-					</div>
-					<div class="hero__image left">
-						<div class="image-container">
-							<img id="image" src="./images/illustration-hero.svg" alt "" />
-							<div class="small-round-bg left hero-bg"></div>
+						<div class="hero__image left">
+							<div class="image-container">
+								<img id="image" src="./images/illustration-hero.svg" alt "" />
+								<div class="small-round-bg left hero-bg"></div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -98,13 +100,14 @@
 
 										<ul class="sections__nav flex" ">
 											<li id=" iBookmark" data-tab="tab1" class="nav__item feat tab1 active">
-											<h3>Simple Bookmarking</h3>
+											<p>Simple Bookmarking</p>
 											</li>
 											<li id="iSearching" data-tab="tab2" class="nav__item feat tab2">
-												<h3>Speedy Searching</h3>
+												<p>Speedy Searching</p>
 											</li>
-											<li id="iSharing" data-tab="tab3" class="nav__item feat tab3"><h3>Easy
-												Sharing</h3>
+											<li id="iSharing" data-tab="tab3" class="nav__item feat tab3">
+												<p>Easy
+													Sharing</p>
 											</li>
 										</ul>
 									</div>
@@ -113,15 +116,23 @@
 
 								<div class="tab-content">
 
+									<!-- <div style="display: flex; padding: 5rem; position: absolute;">test 1</div> -->
 
 
-									<div id="content-tab1" class="sections__tab--content  active">
-										<div class="sections__tab--content-details tab1 flex" style="--gap: 8rem">
+
+								<div id="content-tab1" class="sections__tab--content  active">
+										<div class="sections__tab--content-details tab1 flex">
+
 											<div class="sections__nav--details-graphic">
-												<img src="./images/illustration-features-tab-1.svg" alt="" />
+												<div class="tab-image-container">
+
+													<img class="tab-1-image" src="./images/illustration-features-tab-1.svg"
+													alt="">
+												</div>
+											
 
 											</div>
-											<div class="sections__nav--details-text align-vertical">
+											<div class="sections__nav--details-text">
 												<h2>Bookmark in one click</h2>
 												<p class="margin-2">
 													Organize your bookmarks however you like. Our simple drag-and-drop
@@ -132,18 +143,19 @@
 												<button class="btn primary">More Info</button>
 											</div>
 											<!-- <div class="small-round-bg right"></div> -->
-											
+
 											<div class="small-round-bg right bg-tab1"></div>
 										</div>
 									</div>
 
 									<div id="content-tab2" class="sections__tab--content hidden">
-										<div class="sections__tab--content-details tab2 flex" style="--gap: 6.8rem">
+										<div class="sections__tab--content-details tab2 flex">
 											<div class="sections__nav--details-graphic">
 												<img class="tab-2-image" src="./images/illustration-features-tab-2.svg"
 													alt="" />
+
 											</div>
-											<div class="sections__nav--details-text align-vertical">
+											<div class="sections__nav--details-text">
 												<h2>Intelligent search</h2>
 												<p class="margin-2">
 													Our powerful search feature will help you find saved sites in no
@@ -157,15 +169,15 @@
 										</div>
 									</div>
 
-									<div id="content-tab3" class="sections__tab--content hidden">
-										<div class="sections__tab--content-details tab3 flex" style="--gap: 12rem">
+								 <div id="content-tab3" class="sections__tab--content hidden">
+										<div class="sections__tab--content-details tab3 flex">
 											<div class="sections__nav--details-graphic">
 												<img class="tab-3-image" src="./images/illustration-features-tab-3.svg"
 													alt="" />
 
 
 											</div>
-											<div class="sections__nav--details-text align-vertical">
+											<div class="sections__nav--details-text">
 												<h2>Share your bookmarks</h2>
 												<p class="margin-2">
 													Easily share your bookmarks and collections with others. Create a
@@ -174,7 +186,7 @@
 												<button class="btn primary">More Info</button>
 											</div>
 
-											<div class="small-round-bg right bg-tab3"></div>
+											<!-- <div class="small-round-bg right bg-tab3"></div> -->
 										</div>
 									</div>
 								</div>
@@ -347,7 +359,7 @@
 			</form>
 		</section>
 		<footer class="sections footer-section ">
-			<nav class="inner-container">
+			<nav>
 				<div class="left-nav">
 					<div class="logo">
 						<svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
