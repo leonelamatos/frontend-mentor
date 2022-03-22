@@ -373,7 +373,7 @@ select {
 	height: 44rem;
 	display: flex;
 	flex-direction: column;
-	margin: 10rem 0 5rem;
+	margin: 5rem 0;
 }
 
 .download-section .cards__container {
@@ -696,7 +696,7 @@ span.error {
 
 .small-round-bg {
 	z-index: -1;
-	display: block;
+	/* display: block; */
 	background-color: hsl(var(--softBlue));
 	position: absolute;
 }
@@ -737,32 +737,36 @@ span.error {
 } */
 
 .tab-content {
-	min-height: 520px;
-	max-height: 520px;
+	/* max-height: 520px;   */
+	 min-height: 520px; 
 	height: 100%;
-}
+	/* position: relative; */
+	/* z-index: 1; */
+} 
+
+/* .tab-content .small-round-bg {
+	/* max-width: 41rem;
+	max-height: 25rem; *
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 19%;
+} */
 
 .sections__nav--details-graphic {
 	max-width: 650px;
 	width: 100%;
 	margin-inline: auto;
+	z-index: 2;
+	position: relative;
 }
 
 .sections__nav--details-graphic img {
 	width: 100%;
 }
 
-img.tab-2-image {
-	/* margin-inline: auto; */
-	/* padding-inline: 10px; */
-	width: 89%;
-}
-
-
 img.tab-3-image {
-	/* padding-inline: 10px; */
-	/* margin-inline: auto; */
-	width: 82%;
+	width: 92%;
 }
 
 .sections__tab--content-details {
@@ -773,15 +777,55 @@ img.tab-3-image {
 .sections__tab--content {
 	max-width: 1275px;
 	justify-content: center;
-	/* display: inline-block; */
 	margin-left: auto;
-	/* display: flex; */
 }
 
 .tab-image-container {
-	max-width: 650px;
-	width: 100%;
+	/* max-width: 650px; 
+	 width: 100%;
+	height: 100%;
+	z-index: 2; */
+	 position: relative; 
 }
+
+
+
+
+.tab-content .bg-tab1 {
+	top: 6rem;
+	left: -10.5rem;
+	width: 112%;
+	/* max-width: 43rem;
+	max-height: 24rem; */
+	height: 100%;
+}
+
+.tab-content .bg-tab2 {
+	top: 6rem;
+	left: -10.5rem;
+	width: 107%;
+	height: 88%;
+}
+
+
+.tab-content .bg-tab3 {
+	top: 6rem;
+	left: -10.5rem;
+	width: 107%;
+	height: 91.5%;
+}
+
+.tab-content .bg-tab2.right {
+	border-top-right-radius: 15rem;
+
+	border-bottom-right-radius: 10rem;
+}
+
+.tab-content .bg-tab3.right {
+border-top-right-radius: 5rem;
+border-bottom-right-radius: 10rem;
+}
+
 
 .sections__nav--details-text {
 	width: 100%;
@@ -791,8 +835,4 @@ img.tab-3-image {
 .sections__nav--details-text p {
 	width: 28rem;
 	color: hsl(var(--darkGray));
-}
-
-.feature-section {
-	padding-bottom: 10rem;
 }

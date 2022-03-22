@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Cache-control" content="no-cache">
 	<!-- displays site properly based on user's device -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,14 +64,15 @@
 						<div class="hero__text text-normal center align-vertical">
 							<h1>A Simple Bookmark Manager</h1>
 							<p class="margin-2 text-dark-gray">
-								A clean and simple interface to organize your favourite websites. Open a new browser tab and
+								A clean and simple interface to organize your favourite websites. Open a new browser tab
+								and
 								see your sites load instantly. Try it for free.
 							</p>
 							<div class="hero__buttons--container">
 								<a class="btn primary text-medium margin-right-1">Get it on Chrome</a>
 								<a class="btn secondary text-medium ">Get it on Firefox</a>
-	
-	
+
+
 							</div>
 						</div>
 						<div class="hero__image left">
@@ -120,17 +122,17 @@
 
 
 
-								<div id="content-tab1" class="sections__tab--content  active">
+									<div id="content-tab1" class="sections__tab--content  active">
 										<div class="sections__tab--content-details tab1 flex">
 
 											<div class="sections__nav--details-graphic">
 												<div class="tab-image-container">
+													<div style="width: 100%; margin-inline: auto; z-index: 2;">
 
-													<img class="tab-1-image" src="./images/illustration-features-tab-1.svg"
-													alt="">
-												</div>
-											
-
+														<img class="tab-1-image" src="./images/illustration-features-tab-1.svg" alt="">
+														</div>
+													<div class="small-round-bg right bg-tab1"></div>
+													</div>
 											</div>
 											<div class="sections__nav--details-text">
 												<h2>Bookmark in one click</h2>
@@ -142,17 +144,22 @@
 												</p>
 												<button class="btn primary">More Info</button>
 											</div>
-											<!-- <div class="small-round-bg right"></div> -->
 
-											<div class="small-round-bg right bg-tab1"></div>
 										</div>
 									</div>
 
 									<div id="content-tab2" class="sections__tab--content hidden">
 										<div class="sections__tab--content-details tab2 flex">
 											<div class="sections__nav--details-graphic">
-												<img class="tab-2-image" src="./images/illustration-features-tab-2.svg"
-													alt="" />
+												<div class="tab-image-container">
+
+													<div style="width: 100%;max-width: 531px; margin-inline: auto; position: relative;z-index: 2;">
+
+														<img class="tab-2-image" src="images/illustration-features-tab-2.svg" alt="" />
+													</div>
+													<div class="small-round-bg right bg-tab2"></div>
+												</div>
+
 
 											</div>
 											<div class="sections__nav--details-text">
@@ -164,16 +171,21 @@
 												</p>
 												<button class="btn primary">More Info</button>
 											</div>
-											<!-- <div class="small-round-bg right"></div> -->
-											<div class="small-round-bg right bg-tab2"></div>
 										</div>
 									</div>
 
-								 <div id="content-tab3" class="sections__tab--content hidden">
+									<div id="content-tab3" class="sections__tab--content hidden">
 										<div class="sections__tab--content-details tab3 flex">
 											<div class="sections__nav--details-graphic">
-												<img class="tab-3-image" src="./images/illustration-features-tab-3.svg"
-													alt="" />
+<div class="tab-image-conteiner">
+	<div style="width: 100%;max-width: 531px; margin-inline: auto">
+
+		<img class="tab-3-image" src="./images/illustration-features-tab-3.svg" alt="" />
+	</div>
+
+
+	<div class="small-round-bg right bg-tab3"></div>
+</div>
 
 
 											</div>
@@ -185,10 +197,9 @@
 												</p>
 												<button class="btn primary">More Info</button>
 											</div>
-
-											<!-- <div class="small-round-bg right bg-tab3"></div> -->
 										</div>
 									</div>
+									<!-- <div class="small-round-bg right"></div> -->
 								</div>
 							</div>
 						</div>

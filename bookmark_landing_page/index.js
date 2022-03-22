@@ -1,4 +1,4 @@
-// const Joi = require('hapi-joi');
+// // const Joi = require('hapi-joi');
 
 const navItems = document.querySelectorAll('.nav__item.feat');
 const tabContent = document.querySelectorAll('.sections__tab--content');
@@ -8,16 +8,16 @@ const summaryArray = document.querySelectorAll('.detail-items details');
 const emailInput = document.getElementById('email-input');
 const emailInputError = document.getElementById('email-error-message');
 
-// form.onsubmit = handleOnSubmit;
+// // form.onsubmit = handleOnSubmit;
 
-const schema = joi.object().keys({
-	email: joi
-		.string()
-		.email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
-		.message("Whooops, make sure it's an email"),
+// const schema = joi.object().keys({
+// 	email: joi
+// 		.string()
+// 		.email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
+// 		.message("Whooops, make sure it's an email"),
 
-	isEmailValid: joi.when('email', { is: joi.valid(true), then: joi.boolean().valid(true) }),
-});
+// 	isEmailValid: joi.when('email', { is: joi.valid(true), then: joi.boolean().valid(true) }),
+// });
 
 navItems.forEach((item, indx) => {
 	item.addEventListener('click', function () {
@@ -44,34 +44,34 @@ function removeClass() {
 	});
 }
 
-summaryArray.forEach((title) => {
-	title.addEventListener('toggle', function () {
-		const svg = this.nextElementSibling.querySelector('.arrow-path');
-		if (this.open) {
-			svg.style.stroke = 'hsl(0, 94%, 66%)';
-		} else {
-			svg.style.stroke = '#5267DF';
-		}
-	});
-});
-
-// function handleOnSubmit(event) {
-// 	event.preventDefault();
-// 	const errorMessage = schema.validate({
-// 		email: emailInput.value,
+// summaryArray.forEach((title) => {
+// 	title.addEventListener('toggle', function () {
+// 		const svg = this.nextElementSibling.querySelector('.arrow-path');
+// 		if (this.open) {
+// 			svg.style.stroke = 'hsl(0, 94%, 66%)';
+// 		} else {
+// 			svg.style.stroke = '#5267DF';
+// 		}
 // 	});
+// });
 
-// 	const isInvalid = errorMessage.hasOwnProperty('error');
+// // function handleOnSubmit(event) {
+// // 	event.preventDefault();
+// // 	const errorMessage = schema.validate({
+// // 		email: emailInput.value,
+// // 	});
 
-// 	if (isInvalid) {
-// 		emailInputError.innerText = errorMessage.error.message;
+// // 	const isInvalid = errorMessage.hasOwnProperty('error');
 
-// 		emailInput.classList.add('error');
-// 		emailInputError.classList.add('error-message');
-// 	} else {
-// 		emailInputError.innerText = '';
+// // 	if (isInvalid) {
+// // 		emailInputError.innerText = errorMessage.error.message;
 
-// 		emailInput.classList.remove('error');
-// 		emailInputError.classList.remove('error-message');
-// 	}
-// }
+// // 		emailInput.classList.add('error');
+// // 		emailInputError.classList.add('error-message');
+// // 	} else {
+// // 		emailInputError.innerText = '';
+
+// // 		emailInput.classList.remove('error');
+// // 		emailInputError.classList.remove('error-message');
+// // 	}
+// // }
