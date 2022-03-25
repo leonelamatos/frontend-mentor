@@ -2,7 +2,7 @@
 
 Made with plain JavaScript, HTML, and CSS, it complaits with almost all requirement of the chanllenge. 
 
-![Design preview for the Bookmark landing page coding challenge](./final_disign/finalDesign_screenshot.png)
+![Design preview for the Bookmark landing page coding challenge](./final_design_image/finalDesign_screenshot.png)
 
 ## Overwiew
 
