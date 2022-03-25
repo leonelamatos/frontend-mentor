@@ -2,26 +2,55 @@
 
 const navItems = document.querySelectorAll('.nav__item.feat');
 const tabContent = document.querySelectorAll('.sections__tab--content');
-const activeIndicator = document.getElementById('indicator');
+// const activeIndicator = document.getElementById('indicator');
+const activeIndicator = document.querySelector('.border-line');
 const summaryArray = document.querySelectorAll('.detail-items details');
 // const form = document.getElementById('form');
 const emailInput = document.getElementById('email-input');
 const emailInputError = document.getElementById('email-error-message');
 
-// // form.onsubmit = handleOnSubmit;
+const mobileHeader = document.getElementById('mobile-menu')
+const pageHeader = document.getElementById('page-header')
+const closeMobileButton = document.getElementById('mobile-header')
+const hamMenuButton = document.getElementById('ham-menu')
 
-// const schema = joi.object().keys({
-// 	email: joi
-// 		.string()
-// 		.email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
-// 		.message("Whooops, make sure it's an email"),
+console.log(closeMobileButton);
 
-// 	isEmailValid: joi.when('email', { is: joi.valid(true), then: joi.boolean().valid(true) }),
-// });
+hamMenuButton.addEventListener('click', function () {
+	mobileHeader.classList.add('active');
+	pageHeader.classList.add('hide');
+});
+closeMobileButton.addEventListener('click', function(){
+	pageHeader.classList.remove('hide');
+	mobileHeader.classList.remove('active');
+
+})
+
+// Remove error class is the input is empty.
+emailInput.addEventListener('input', function (e) {
+	const hasErrorClass = emailInput.classList.contains('error');
+	if ((e.target.value === '') & hasErrorClass) {
+		this.classList.remove('error');
+		emailInputError.classList.remove('error');
+	}
+});
+
+// console.log(activeIndicator)
+
+form.onsubmit = handleOnSubmit;
+
+const schema = joi.object().keys({
+	email: joi
+		.string()
+		.email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
+		.message("Whooops, make sure it's an email"),
+
+	isEmailValid: joi.when('email', { is: joi.valid(true), then: joi.boolean().valid(true) }),
+});
 
 navItems.forEach((item, indx) => {
 	item.addEventListener('click', function () {
-		console.log(item);
+		// activeIndicator.style.setProperty('--tabPosition',item.dataset.position)
 		removeClass();
 		this.classList.add('active');
 		// activeIndicator.style.transform = `translateX(calc(100% * ${indx}))`;
@@ -44,34 +73,36 @@ function removeClass() {
 	});
 }
 
-// summaryArray.forEach((title) => {
-// 	title.addEventListener('toggle', function () {
-// 		const svg = this.nextElementSibling.querySelector('.arrow-path');
-// 		if (this.open) {
-// 			svg.style.stroke = 'hsl(0, 94%, 66%)';
-// 		} else {
-// 			svg.style.stroke = '#5267DF';
-// 		}
-// 	});
-// });
+summaryArray.forEach((title) => {
+	title.addEventListener('toggle', function () {
+		const svg = this.nextElementSibling.querySelector('.arrow-path');
+		if (this.open) {
+			svg.style.stroke = 'hsl(0, 94%, 66%)';
+		} else {
+			svg.style.stroke = '#5267DF';
+		}
+	});
+});
 
-// // function handleOnSubmit(event) {
-// // 	event.preventDefault();
-// // 	const errorMessage = schema.validate({
-// // 		email: emailInput.value,
-// // 	});
+function handleOnSubmit(event) {
+	event.preventDefault();
 
-// // 	const isInvalid = errorMessage.hasOwnProperty('error');
+	console.log(emailInput.value);
+	const errorMessage = schema.validate({
+		email: emailInput.value,
+	});
 
-// // 	if (isInvalid) {
-// // 		emailInputError.innerText = errorMessage.error.message;
+	const isInvalid = errorMessage.hasOwnProperty('error');
 
-// // 		emailInput.classList.add('error');
-// // 		emailInputError.classList.add('error-message');
-// // 	} else {
-// // 		emailInputError.innerText = '';
+	if (isInvalid) {
+		emailInputError.innerText = errorMessage.error.message;
 
-// // 		emailInput.classList.remove('error');
-// // 		emailInputError.classList.remove('error-message');
-// // 	}
-// // }
+		emailInput.classList.add('error');
+		emailInputError.classList.add('error');
+	} else {
+		emailInputError.innerText = '';
+
+		emailInput.classList.remove('error');
+		emailInputError.classList.remove('error-message');
+	}
+}
