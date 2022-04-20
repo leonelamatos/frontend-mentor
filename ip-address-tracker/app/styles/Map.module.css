@@ -1,0 +1,10 @@
+.wrapper {
+	max-width: 1440px;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	text-align: left;
+	height: calc(100vh - 250px);
+	background-color: #fff;
+	width: 100%;
+}
