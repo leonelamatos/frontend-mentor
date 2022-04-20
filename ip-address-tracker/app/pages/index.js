@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import DisplayData from '../Components/DisplayData';
 import Header from '../Components/Header';
-import styles from '../styles/Home.module.css';
+import Map from '../Components/Map';
 
 export default function Home() {
 	return (
@@ -20,6 +20,7 @@ export default function Home() {
 			</Head>
 			<Header />
 			<DisplayData />
+			<Map />
 		</>
 	);
 }
