@@ -26,3 +26,17 @@ a {
 	margin-inline: auto;
 	/* color: #fff; */
 }
+
+@media (max-width: 768px) {
+	.container {
+		min-width: 375px;
+	}
+
+	.leaflet-top {
+		top: 200px !important;
+	}
+/* 
+	.leaflet-pane {
+		transform: translate3d(0px, 100px, 0px) !important;
+	} */
+}
