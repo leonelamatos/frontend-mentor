@@ -27,13 +27,15 @@
 	width: 100%;
 }
 
+
+
 .inputItem {
 	font-family: 'Rubik', sans-serif;
 	padding: 1rem 2rem;
 	font-size: 1.2rem;
 	color: #555;
 	font-weight: 500;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.08rem;
 	border: none;
 	max-width: 35rem;
 	width: 100%;
