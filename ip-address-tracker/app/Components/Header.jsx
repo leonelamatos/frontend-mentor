@@ -14,6 +14,7 @@ export default function Header() {
 		e.preventDefault();
 		const { data } = await axios.post('/api/dns', { ip: query });
 		updateLocation(data);
+		setQuery('');
 	};
 	return (
 		<section className={styles.header}>
