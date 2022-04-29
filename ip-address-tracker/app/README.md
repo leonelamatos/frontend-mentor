@@ -24,6 +24,7 @@ Your users should be able to:
 -   [Ipwhois.io](https://ipwhois.io/) API - for the IP geolocation data.
 -   [React Leaflet Map](https://react-leaflet.js.org/) - for the map.
 -   CSS Module for styling.
+- [React Context](https://reactjs.org/docs/context.html) - for sharing data between components.
 
 ## Author
 
