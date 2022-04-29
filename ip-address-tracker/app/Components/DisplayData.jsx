@@ -28,6 +28,7 @@ function DisplayData() {
 					<h2>
 						{state.city ? state.city : state.stateProv},{' '}
 						{state.regionCode ? state.regionCode : state.country_code}
+						<br />
 						{state.postalCode}
 					</h2>
 				</div>
